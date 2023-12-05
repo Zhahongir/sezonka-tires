@@ -338,6 +338,54 @@ div, a, button, span, p {
     left: 0;
 }
 
+.tag-2 {
+    position: fixed;
+    left: 100px;
+    top: -5px;
+    width: 400px;
+    height: auto;
+}
+
+.tag-1 {
+    position: fixed;
+    right: 200px;
+    bottom: -40px;
+    width: 280px;
+    height: auto;
+}
+
+.l-t {
+    position: fixed;
+    left: 0;
+    top: 50px;
+    width: 300px;
+    height: auto;
+}
+
+.l-b {
+    position: fixed;
+    left: 0;
+    bottom: 0px;
+    width: 300px;
+    height: auto;
+}
+
+.r-t {
+    position: fixed;
+    right: 0;
+    top: 50px;
+    width: 300px;
+    height: auto;
+}
+
+.r-b {
+    position: fixed;
+    right: 0;
+    bottom: 0px;
+    width: 300px;
+    height: auto;
+}
+
 .promo {
     height: 100vh;
 }
@@ -837,6 +885,27 @@ div, a, button, span, p {
 
 /* Adaptive */
 @media screen and (max-width: 1199px) {
+    .l-b {
+        left: -90px;
+    }
+    .l-t {
+        left: -90px;
+    }
+    .r-t {
+        right: -90px;
+    }
+    .r-b {
+        right: -90px;
+    }
+    .tag-2 {
+        width: 350px;
+        top: 5px;
+        left: 25px;
+    }
+    .tag-1 {
+        right: 50px;
+        bottom: -30px;
+    }
     .container {
         width: 960px;
     }
@@ -846,6 +915,10 @@ div, a, button, span, p {
 }
 
 @media screen and (max-width: 991px) {
+    .tag-1 {
+        width: 250px;
+        bottom: -20px;
+    }
     .container {
         width: 720px;
     }
@@ -1000,6 +1073,56 @@ div, a, button, span, p {
 }
 
 @media screen and (max-width: 575px) {
+    .bg__mobile {
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+    .logo__mobile {
+        display: block;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 230px;
+        height: auto;
+    }
+    .tag-1 {
+        width: 200px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .tag-2 {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 300px;
+        top: 8px;
+    }
+    .r-b {
+        width: 280px;
+        right: -90px;
+        bottom: -20px;
+    }
+    .r-t {
+        width: 220px;
+        right: -65px;
+        top: 45px;
+    }
+    .l-t {
+        width: 200px;
+        left: -55px;
+    }
+
+    .l-b {
+        width: 200px;
+        left: -55px;
+    }
+
     .container {
         width: 100%;
         padding-left: 15px;
@@ -1012,6 +1135,7 @@ div, a, button, span, p {
 
     body {
         background: url(../images/bg-phone.webp);
+        background: #000 !important;
         background-color: #000;
         background-position: center;
         background-size: cover;
@@ -1140,6 +1264,22 @@ div, a, button, span, p {
 
     .menu__inner__phone {
         margin-top: 25px;
+    }
+
+    @keyframes moveUpAndDown {
+        0% {
+          top: 80%;
+        }
+        50% {
+            top: 75%;
+        }
+        100% {
+            top: 80%;
+        }
+    }
+
+    .about {
+        padding-bottom: 0;
     }
 
 }
