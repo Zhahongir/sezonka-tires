@@ -42,6 +42,14 @@ div, a, button, span, p {
     -webkit-tap-highlight-color: transparent;
 }
 
+.logo__mobile {
+    display: none;
+}
+
+.bg__mobile {
+    display: none;
+}
+
 
 /* Header */
 .header {
