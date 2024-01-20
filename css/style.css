@@ -33,8 +33,9 @@ a {
 }
 
 .container {
-    width: 1200px;
     margin: 0 auto;
+    padding-left: 120px;
+    padding-right: 120px;
 }
 
 div, a, button, span, p {
@@ -356,42 +357,39 @@ div, a, button, span, p {
 
 .tag-1 {
     position: fixed;
-    right: 200px;
+    right: 150px;
     bottom: -40px;
     width: 280px;
     height: auto;
 }
 
+.frame-element {
+    width: auto;
+    height: 95px;
+}
+
 .l-t {
     position: fixed;
-    left: 0;
-    top: 50px;
-    width: 300px;
-    height: auto;
+    left: 100px;
+    top: 90px;
 }
 
 .l-b {
     position: fixed;
-    left: 0;
-    bottom: 0px;
-    width: 300px;
-    height: auto;
+    left: 100px;
+    bottom: 40px;
 }
 
 .r-t {
     position: fixed;
-    right: 0;
-    top: 50px;
-    width: 300px;
-    height: auto;
+    right: 100px;
+    top: 90px;
 }
 
 .r-b {
     position: fixed;
-    right: 0;
-    bottom: 0px;
-    width: 300px;
-    height: auto;
+    right: 100px;
+    bottom: 40px;
 }
 
 .promo {
@@ -433,7 +431,6 @@ div, a, button, span, p {
 .about {
     position: relative;
     padding-top: 30px;
-    padding-bottom: 50px;
 }
 
 .about__wrap {
@@ -789,7 +786,7 @@ div, a, button, span, p {
 
 .services {
     position: relative;
-    padding-top: 30px;
+    padding-top: 5px;
     padding-bottom: 50px;
 }
 
@@ -894,16 +891,16 @@ div, a, button, span, p {
 /* Adaptive */
 @media screen and (max-width: 1199px) {
     .l-b {
-        left: -90px;
+        left: 16px;
     }
     .l-t {
-        left: -90px;
+        left: 16px;
     }
     .r-t {
-        right: -90px;
+        right: 16px;
     }
     .r-b {
-        right: -90px;
+        right: 16px;
     }
     .tag-2 {
         width: 350px;
@@ -911,11 +908,13 @@ div, a, button, span, p {
         left: 25px;
     }
     .tag-1 {
-        right: 50px;
-        bottom: -30px;
+        right: 60px;
+        bottom: -40px;
     }
     .container {
         width: 960px;
+        padding-left: 0;
+        padding-right: 0;
     }
     body {
         background-position-x: 0px;
@@ -925,7 +924,8 @@ div, a, button, span, p {
 @media screen and (max-width: 991px) {
     .tag-1 {
         width: 250px;
-        bottom: -20px;
+        bottom: -30px;
+        right: 65px;
     }
     .container {
         width: 720px;
@@ -1081,6 +1081,25 @@ div, a, button, span, p {
 }
 
 @media screen and (max-width: 575px) {
+    .frame-element {
+        height: 70px;
+    }
+    .l-b {
+        left: 15px;
+        bottom: 20px;
+    }
+    .l-t {
+        left: 15px;
+        top: 80px;
+    }
+    .r-t {
+        right: 15px;
+        top: 80px;
+    }
+    .r-b {
+        right: 15px;
+        bottom: 20px;
+    }
     .bg__mobile {
         display: block;
         position: fixed;
@@ -1109,26 +1128,7 @@ div, a, button, span, p {
         left: 50%;
         transform: translateX(-50%);
         width: 300px;
-        top: 8px;
-    }
-    .r-b {
-        width: 280px;
-        right: -90px;
-        bottom: -20px;
-    }
-    .r-t {
-        width: 220px;
-        right: -65px;
-        top: 45px;
-    }
-    .l-t {
-        width: 200px;
-        left: -55px;
-    }
-
-    .l-b {
-        width: 200px;
-        left: -55px;
+        top: 10px;
     }
 
     .container {
