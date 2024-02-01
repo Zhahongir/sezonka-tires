@@ -7,8 +7,17 @@ const swiperReviews = new Swiper('.swiper-container', {
     pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
-      },
+    },
+    navigation: {
+        nextEl: '.next-slider',
+        prevEl: '.prev-slider',
+    },
     breakpoints: {
+    1500: {
+        slidesPerView: 2,
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+    },
     992: {
         slidesPerView: 2,
         spaceBetween: 21,

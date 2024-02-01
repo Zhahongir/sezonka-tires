@@ -828,6 +828,60 @@ div, a, button, span, p {
     row-gap: 20px;
 }
 
+.swiper-button-next:after, .swiper-button-prev:after {
+    display: none;
+}
+.swiper-button-prev {
+    width: 60px !important;
+    height: 50px !important;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    top: 135px !important;
+    background: rgba(255, 255 ,255, .2);
+    backdrop-filter: blur(10px);
+}
+.swiper-button-next {
+    width: 60px !important;
+    height: 50px !important;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    top: 135px !important;
+    background: rgba(255, 255 ,255, .2);
+    backdrop-filter: blur(10px);
+}
+
+.publ__btns__prev {
+    width: 30px;
+    height: 38px;
+    transform: rotate(90deg);
+    transition: 0.3s linear;
+}
+
+.publ__btns__prev:hover {
+    margin-left: -10px;
+    opacity: 0.9;
+}
+
+.publ__btns__next {
+    width: 30px;
+    height: 38px;
+    transform: rotate(-90deg);
+    transition: 0.3s linear;
+}
+
+.publ__btns__next:hover {
+    margin-left: 10px;
+    opacity: 0.9;
+}
+
 .services__wrap__info__list__item {
     display: flex;
     align-items: center;
@@ -889,6 +943,54 @@ div, a, button, span, p {
 }
 
 /* Adaptive */
+@media screen and (min-width: 1750px) {
+    .swiper-slide {
+        width: 450px !important;
+    }
+    .about__wrap__extra__list {
+        width: max-content;
+    }
+    .about__wrap__extra__list__item__title {
+        font-size: 22px;
+    }
+    .services__wrap__info__list__item__price {
+        font-size: 22px;
+    }
+    .services__wrap__info__list__item__name {
+        font-size: 22px;
+    }
+    .about__wrap__price__list__item__divider {
+        width: 400px;
+    }
+    .about__wrap__price__list__item {
+        width: 100%;
+    }
+    .about__wrap__price__list {
+        width: 600px;
+    }
+    .about__wrap__price__list__item__name {
+        font-size: 22px;
+        width: 94px;
+        text-align: right;
+    }
+    .about__wrap__info__text {
+        font-size: 20px;
+    }
+    .about__wrap__price__list__item__price {
+        font-size: 22px;
+    }
+}
+@media screen and (min-width: 1500px) {
+    .about__wrap {
+        width: 60%;
+    }
+    .services__wrap {
+        width: 60%;
+    }
+    .swiper-slide {
+        width: 350px !important;
+    }
+}
 @media screen and (max-width: 1199px) {
     .l-b {
         left: 16px;
@@ -968,7 +1070,14 @@ div, a, button, span, p {
     }
 }
 
+html {
+    scroll-padding-top: 50px; /* height of sticky header */
+  }
+
 @media screen and (max-width: 767px) {
+    .swiper-button-prev, .swiper-button-next {
+        display: none !important;
+    }
     .container {
         width: 540px;
     }
